@@ -530,6 +530,19 @@ function RCVotingFrame:DoAllRandomRolls()
 	end
 end
 
+function RCVotingFrame:ToggleVoteLock()
+	-- b5:SetScript("OnClick", function(self) addon:SendCommand("group", "lockVotes", not addon.mldb.lockVotes) end )	
+	if addon.isMasterLooter then
+		if addon.mldb.votesLocked then
+			self.frame.lockVotesButton:SetText(L["Lock votes"])	
+			addon:SendCommand("group", "lockVotes", false)
+		else			
+			self.frame.lockVotesButton:SetText(L["Unlock votes"])
+			addon:SendCommand("group", "lockVotes", true)
+		end
+	end
+end
+
 
 local function reversedSort(a,b) return a > b end
 
@@ -603,9 +616,20 @@ function RCVotingFrame:Update(forceUpdate)
 			self.frame.abortBtn:SetText(_G.CLOSE)
 		end
 		self.frame.disenchant:Show()
+		if addon.mldb.lockVotes then
+			self.frame.lockVotesButton:Show()
+			if addon.mldb.votesLocked then
+				self.frame.lockVotesButton:SetText(L["Unlock votes"])			
+			else			
+				self.frame.lockVotesButton:SetText(L["Lock votes"])
+			end
+		else
+			self.frame.lockVotesButton:Hide()
+		end
 	else -- Non-MLs:
 		self.frame.abortBtn:SetText(_G.CLOSE)
 		self.frame.disenchant:Hide()
+		self.frame.lockVotesButton:Hide()
 	end
 	if #self.frame.st.filtered < #self.frame.st.data then -- Some row is filtered in this session
 		self.frame.filter.Text:SetTextColor(0.86,0.5,0.22) -- #db8238
@@ -926,6 +950,12 @@ function RCVotingFrame:GetFrame()
 	--b4:SetNormalTexture("Interface\\Icons\\INV_Enchant_Disenchant")
 --	b4:Hide() -- hidden by default
 	f.disenchant = b4
+
+	-- Lock votes button
+	local b5 = addon:CreateButton("LockButton", f.content)
+	b5:SetPoint("RIGHT", b4, "LEFT", -10, 0)
+	b5:SetScript("OnClick", function() self:ToggleVoteLock() end )
+	f.lockVotesButton = b5
 
 	-- Number of votes
 	local rf = CreateFrame("Frame", nil, f.content)
@@ -1255,7 +1285,7 @@ function RCVotingFrame.SetCellVotes(rowFrame, frame, data, cols, row, realrow, c
 	local name = data[realrow].name
 	frame:SetScript("OnEnter", function()
 		if not addon.mldb.anonymousVoting or (db.showForML and addon.isMasterLooter) then
-			if not addon.mldb.hideVotes or (addon.mldb.hideVotes and lootTable[session].haveVoted) then
+			if not addon.mldb.hideVotes or (addon.mldb.hideVotes and (lootTable[session].haveVoted or (addon.mldb.observe and not addon.isCouncil))) then
 				addon:CreateTooltip(L["Voters"], unpack((function ()
 					local ret = {}
 					for i,name in ipairs(lootTable[session].candidates[name].voters) do
@@ -1273,7 +1303,7 @@ function RCVotingFrame.SetCellVotes(rowFrame, frame, data, cols, row, realrow, c
 	frame.text:SetText(val)
 
 	if addon.mldb.hideVotes then
-		if not lootTable[session].haveVoted then
+		if not lootTable[session].haveVoted and addon.isCouncil then
 			frame.text:SetText(0)
 			data[realrow].cols[column].value = 0 -- Don't background sort when we can't see the votes
 		end
@@ -1282,9 +1312,17 @@ end
 
 function RCVotingFrame.SetCellVote(rowFrame, frame, data, cols, row, realrow, column, fShow, table, ...)
 	local name = data[realrow].name
-	if not active or lootTable[session].awarded then -- Don't show the vote button if awarded or not active
+	
+	if not active or lootTable[session].awarded then -- Don't show the vote button if awarded or not active, (Nereid) Or if lock votes is enabled and vote is already given.
 		if frame.voteBtn then
 			frame.voteBtn:Hide()
+		end
+		return
+	end
+	if addon.mldb.lockVotes and addon.mldb.votesLocked and lootTable[session].haveVoted then -- (Nereid) Show  the vote button as disabled and locked if lock votes is enabled and vote is already given.
+		if frame.voteBtn then
+			frame.voteBtn:Disable()
+			frame.voteBtn:SetText(L["Locked"])
 		end
 		return
 	end
@@ -1325,6 +1363,7 @@ function RCVotingFrame.SetCellVote(rowFrame, frame, data, cols, row, realrow, co
 			end
 		end)
 		frame.voteBtn:Show()
+		frame.voteBtn:Enable()
 		if lootTable[session].candidates[name].haveVoted then
 			frame.voteBtn:SetText(L["Unvote"])
 		else

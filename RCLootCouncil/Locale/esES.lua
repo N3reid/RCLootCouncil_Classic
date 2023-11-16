@@ -371,6 +371,12 @@ L["options_autoAwardBoE_name"] = "Auto asignar BoE's"
 L["options_ml_outOfRaid_desc"] = "Si se habilita, mientras se esté en un grupo de 8 o más personas, a todo aquel que no esté en una instancia al inicio de la sesión se le enviará automáticamente una notificación de 'Fuera de Raid'."
 L["options_ml_outOfRaid_name"] = "Soporte para 'Fuera de Raid'"
 L["options_requireNotes_desc"] = "Si se habilita, los candidatos no podrán mandar su respuesta sin incluir una nota."
+L["options_lockVotes_desc"] = "If enabled, council can not change their votes once given."
+--[[Translation missing --]]
+L["Lock votes"] = "Lock votes"
+--[[Translation missing --]]
+L["Unlock votes"] = "Unlock votes"
+--[[Translation missing --]]
 L["Original Owner"] = "Propietario original"
 L["Out of instance"] = "Fuera de la instancia"
 L["Patch"] = "Parche"
@@ -408,6 +414,8 @@ L["Remove from consideration"] = "Eliminar consideracion"
 L["remove_all_desc"] = "Eliminar todos los miembros del consejo"
 L["Requested rolls for 'item' from 'target'"] = "Dados solicitados para %s de %s"
 L["Require Notes"] = "Requiere Notas"
+L["Lock Votes"] = "Lock Votes"
+--[[Translation missing --]]
 L["Reset Skin"] = "Reiniciar apariencia"
 L["Reset skins"] = "Reiniciar apariencia"
 L["reset_announce_to_default_desc"] = "Restablecer todas las opciones de aviso por defecto"
@@ -518,6 +526,8 @@ L["Unknown date"] = "Fecha desconocida"
 L["Unknown/Chest"] = "Desconocido "
 L["Unlooted"] = "No despojado"
 L["Unvote"] = true
+L["Locked"] = "Locked"
+--[[Translation missing --]]
 L["Upper Quality Limit"] = "Limite Superior de Calidad"
 L["upper_quality_limit_desc"] = [=[Seleccionar la calidad mas alta de los objetos a repartir automaticamente (calidad seleccionada incluida)
 Nota: Esto sobrescribe el umbral normal de saqueo.]=]

@@ -438,6 +438,12 @@ L["options_ml_outOfRaid_name"] = "Out of Raid Support"
 --[[Translation missing --]]
 L["options_requireNotes_desc"] = "If enabled, candidates cannot submit their response without having entered a note."
 --[[Translation missing --]]
+L["options_lockVotes_desc"] = "If enabled, council can not change their votes once given."
+--[[Translation missing --]]
+L["Lock votes"] = "Lock votes"
+--[[Translation missing --]]
+L["Unlock votes"] = "Unlock votes"
+--[[Translation missing --]]
 L["Original Owner"] = "Original Owner"
 L["Out of instance"] = "不在副本內"
 --[[Translation missing --]]
@@ -477,6 +483,8 @@ L["remove_all_desc"] = "移除所有可拾取成員"
 L["Requested rolls for 'item' from 'target'"] = "已要求 %2$s 對 %1$s 擲點"
 --[[Translation missing --]]
 L["Require Notes"] = "Require Notes"
+L["Lock Votes"] = "Lock Votes"
+--[[Translation missing --]]
 L["Reset Skin"] = "重置外觀"
 L["Reset skins"] = "重置外觀"
 L["reset_announce_to_default_desc"] = "重置所有通知選項"
@@ -596,6 +604,8 @@ L["Unknown/Chest"] = "未知"
 --[[Translation missing --]]
 L["Unlooted"] = "Unlooted"
 L["Unvote"] = "未投票"
+L["Locked"] = "Locked"
+--[[Translation missing --]]
 L["Upper Quality Limit"] = "最高品質"
 L["upper_quality_limit_desc"] = "選擇自動分配時物品的最高品質"
 L["Usage"] = "使用"

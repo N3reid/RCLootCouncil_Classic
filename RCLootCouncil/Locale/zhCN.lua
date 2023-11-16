@@ -463,6 +463,12 @@ L["options_ml_outOfRaid_name"] = "Out of Raid Support"
 --[[Translation missing --]]
 L["options_requireNotes_desc"] = "If enabled, candidates cannot submit their response without having entered a note."
 --[[Translation missing --]]
+L["options_lockVotes_desc"] = "If enabled, council can not change their votes once given."
+--[[Translation missing --]]
+L["Lock votes"] = "Lock votes"
+--[[Translation missing --]]
+L["Unlock votes"] = "Unlock votes"
+--[[Translation missing --]]
 L["Original Owner"] = "Original Owner"
 --[[Translation missing --]]
 L["Out of instance"] = "Out of instance"
@@ -507,6 +513,8 @@ L["remove_all_desc"] = "移除所有议会成员。"
 L["Requested rolls for 'item' from 'target'"] = "已要求 %2$s 对 %1$s 掷点"
 --[[Translation missing --]]
 L["Require Notes"] = "Require Notes"
+L["Lock Votes"] = "Lock Votes"
+--[[Translation missing --]]
 L["Reset Skin"] = "重置皮肤"
 L["Reset skins"] = "重置皮肤"
 L["reset_announce_to_default_desc"] = "重置所有通告选项"
@@ -637,6 +645,8 @@ L["Unknown/Chest"] = "未知/箱子"
 --[[Translation missing --]]
 L["Unlooted"] = "Unlooted"
 L["Unvote"] = "取消投票"
+L["Locked"] = "Locked"
+--[[Translation missing --]]
 L["Upper Quality Limit"] = "品质上限"
 L["upper_quality_limit_desc"] = [=[选择自动分配时物品的品质上限 (含此品质！).
 注意: 这将会更改物品分配界限。]=]

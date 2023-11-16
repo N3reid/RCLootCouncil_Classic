@@ -539,6 +539,8 @@ function RCLootCouncilML:BuildMLdb()
 		numButtons		= db.buttons.default.numButtons, -- v2.9: Kept as to not break backwards compability on mldb comms. Not used any more
 		hideVotes		= db.hideVotes or nil,
 		observe			= db.observe or nil,
+		lockVotes		= db.lockVotes or nil, -- Nereid: Lock the votes once given. Maybe add a realtime toggle switch for MasterLooter
+		votesLocked 	= db.votesLocked or nil, -- Nereid: This is the actual lock variable
 		buttons			= changedButtons,	-- REVIEW I'm not sure if it's feasible to nil out empty tables
 		responses		= changedResponses,
 		timeout			= db.timeout,

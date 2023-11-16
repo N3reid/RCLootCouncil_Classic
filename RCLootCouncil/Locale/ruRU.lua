@@ -515,6 +515,12 @@ L["options_ml_outOfRaid_desc"] = "When enabled, while in a group of 8 or more me
 L["options_ml_outOfRaid_name"] = "Out of Raid Support"
 --[[Translation missing --]]
 L["options_requireNotes_desc"] = "If enabled, candidates cannot submit their response without having entered a note."
+L["options_lockVotes_desc"] = "If enabled, council can not change their votes once given."
+--[[Translation missing --]]
+L["Lock votes"] = "Lock votes"
+--[[Translation missing --]]
+L["Unlock votes"] = "Unlock votes"
+--[[Translation missing --]]
 L["Original Owner"] = "Изначальный владелец"
 L["Out of instance"] = "Вне подземелья"
 L["Patch"] = "Патч"
@@ -560,6 +566,8 @@ L["remove_all_desc"] = "Убрать всех членов консула"
 --[[Translation missing --]]
 L["Requested rolls for 'item' from 'target'"] = "Requested rolls for %s from %s"
 L["Require Notes"] = "Требовать заметки"
+L["Lock Votes"] = "Lock Votes"
+--[[Translation missing --]]
 L["Reset Skin"] = "Сбросить скин"
 L["Reset skins"] = "Сбросить скины"
 L["reset_announce_to_default_desc"] = "Сбрасывает настройки сообщений по умолчанию"
@@ -712,6 +720,8 @@ L["Unknown/Chest"] = "Неизвестно/Сундук"
 --[[Translation missing --]]
 L["Unlooted"] = "Unlooted"
 L["Unvote"] = "Не голосовать"
+L["Locked"] = "Locked"
+--[[Translation missing --]]
 L["Upper Quality Limit"] = "Лимит улучшения качества"
 --[[Translation missing --]]
 L["upper_quality_limit_desc"] = [=[Select the upper quality limit of items to auto award (this quality included!).

@@ -389,6 +389,12 @@ L["options_autoAwardBoE_name"] = "BoE's automatisch vergeben"
 L["options_ml_outOfRaid_desc"] = "Wenn diese Option aktiviert ist, wird in einer Gruppe von 8 oder mehr Mitgliedern von jedem, der sich nicht in einer Instanz befindet, wenn eine Sitzung gestartet wird, automatisch die Antwort \"Nicht im Raid\" senden."
 L["options_ml_outOfRaid_name"] = "Nicht im Raid unterstützen"
 L["options_requireNotes_desc"] = "Wenn diese Option aktiviert ist, können Kandidaten ihre Antwort nicht einreichen, ohne eine Notiz eingegeben zu haben."
+L["options_lockVotes_desc"] = "If enabled, council can not change their votes once given."
+--[[Translation missing --]]
+L["Lock votes"] = "Lock votes"
+--[[Translation missing --]]
+L["Unlock votes"] = "Unlock votes"
+--[[Translation missing --]]
 L["Original Owner"] = "Ursprünglicher Besitzer"
 L["Out of instance"] = "Keine Instanz"
 L["Patch"] = true
@@ -426,6 +432,8 @@ L["Remove from consideration"] = "Aus der Betrachtung entfernen"
 L["remove_all_desc"] = "Alle Ratsmitglieder entfernen"
 L["Requested rolls for 'item' from 'target'"] = "Würfe für %s von %s angefordert"
 L["Require Notes"] = "Notizen erforderlich"
+L["Lock Votes"] = "Lock Votes"
+--[[Translation missing --]]
 L["Reset Skin"] = "Optik zurücksetzen"
 L["Reset skins"] = "Optiken zurücksetzen"
 L["reset_announce_to_default_desc"] = "Setzt alle Ankündigungsoptionen auf Standardeinstellungen zurück."
@@ -546,6 +554,8 @@ L["Unknown date"] = "Unbekanntes Datum"
 L["Unknown/Chest"] = "Unbekannt/Brust"
 L["Unlooted"] = "Nicht geplündert"
 L["Unvote"] = "Abwählen"
+L["Locked"] = "Locked"
+--[[Translation missing --]]
 L["Upper Quality Limit"] = "Obere Qualitätsgrenze"
 L["upper_quality_limit_desc"] = [=[Wähle die obere Qualitätsgrenze der Gegenstände, die automatisch vergeben werden (Diese Qualität inbegriffen!).
 Hinweis: Dies überschreibt die normale Plünderschwelle.]=]

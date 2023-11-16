@@ -826,6 +826,11 @@ function RCLootCouncil:OnCommReceived(prefix, serializedMsg, distri, sender)
 			elseif command == "getCorruptionData" then
 				-- Just in case we need it...
 				self:SendCommand(sender, "corruptionData", self:GetPlayerCorruption())
+			elseif command == "lockVotes" then		
+				if self.isCouncil then
+					self.mldb.votesLocked = unpack(data)	-- Also refresh the voting window here if it is open.		
+					self:GetActiveModule("votingframe").frame.st:Refresh()
+				end
 			end
 		else
 			-- Most likely pre 2.0 command

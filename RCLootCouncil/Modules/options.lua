@@ -978,6 +978,12 @@ function addon:OptionsTable()
 										type = "toggle",
 										disabled = function() return not self.db.profile.allowNotes end ,
 									},
+									lockVotes = {
+										order = 10,
+										name = L["Lock Votes"],
+										desc = L["options_lockVotes_desc"],
+										type = "toggle",
+									},
 								},
 							},
 							ignoreOptions = {

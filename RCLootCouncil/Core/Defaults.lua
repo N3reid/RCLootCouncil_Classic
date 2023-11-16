@@ -99,6 +99,8 @@ addon.defaults = {
       outOfRaid = false,
       useSlashRC = true, -- Register "/rc" slash command.
       saveBonusRolls = true,
+      lockVotes = false, -- Nereid: New feature and should be false by default.
+      votesLocked = true,
 
       chatFrameName = "DEFAULT_CHAT_FRAME", -- The chat frame to use for :Print()s
 

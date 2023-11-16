@@ -717,6 +717,12 @@ L["options_ml_outOfRaid_name"] = "Out of Raid Support"
 --[[Translation missing --]]
 L["options_requireNotes_desc"] = "If enabled, candidates cannot submit their response without having entered a note."
 --[[Translation missing --]]
+L["options_lockVotes_desc"] = "If enabled, council can not change their votes once given."
+--[[Translation missing --]]
+L["Lock votes"] = "Lock votes"
+--[[Translation missing --]]
+L["Unlock votes"] = "Unlock votes"
+--[[Translation missing --]]
 L["Original Owner"] = "Original Owner"
 --[[Translation missing --]]
 L["Out of instance"] = "Out of instance"
@@ -789,6 +795,8 @@ L["remove_all_desc"] = "Remove all council members"
 L["Requested rolls for 'item' from 'target'"] = "Requested rolls for %s from %s"
 --[[Translation missing --]]
 L["Require Notes"] = "Require Notes"
+--[[Translation missing --]]
+L["Lock Votes"] = "Lock Votes"
 --[[Translation missing --]]
 L["Reset Skin"] = "Reset Skin"
 --[[Translation missing --]]
@@ -1015,6 +1023,8 @@ L["Unknown/Chest"] = "Unknown/Chest"
 L["Unlooted"] = "Unlooted"
 --[[Translation missing --]]
 L["Unvote"] = "Unvote"
+--[[Translation missing --]]
+L["Locked"] = "Locked"
 --[[Translation missing --]]
 L["Upper Quality Limit"] = "Upper Quality Limit"
 --[[Translation missing --]]

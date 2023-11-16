@@ -375,6 +375,12 @@ L["options_autoAwardBoE_name"] = "Assigner automatiquement les LQE"
 L["options_ml_outOfRaid_desc"] = "Quand activé et dans un groupe de 8 (ou plus) membres, toute personne qui n'est pas dans une instance quand la session commence enverra automatiquement une réponse 'Hors du raid'"
 L["options_ml_outOfRaid_name"] = "Support Hors du raid"
 L["options_requireNotes_desc"] = "Si activé, les candidats ne peuvent pas envoyer leur réponse sans avoir écrit une note."
+L["options_lockVotes_desc"] = "If enabled, council can not change their votes once given."
+--[[Translation missing --]]
+L["Lock votes"] = "Lock votes"
+--[[Translation missing --]]
+L["Unlock votes"] = "Unlock votes"
+--[[Translation missing --]]
 L["Original Owner"] = "Détenteur originel"
 L["Out of instance"] = "Hors de l'instance"
 L["Patch"] = "Correctif"
@@ -523,6 +529,8 @@ L["Unknown date"] = "Date inconnue"
 L["Unknown/Chest"] = "Inconnu / Plastron"
 L["Unlooted"] = "Non ramassé"
 L["Unvote"] = "Annuler"
+L["Locked"] = "Locked"
+--[[Translation missing --]]
 L["Upper Quality Limit"] = "Seuil supérieur de qualité"
 L["upper_quality_limit_desc"] = [=[Déterminez le seuil supérieur de qualité des objets qui seront automatiquement attribués (cette qualité est comprise).
 Remarque : cette option prime le seuil de qualité par défaut. ]=]
