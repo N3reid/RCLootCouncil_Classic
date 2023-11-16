@@ -531,7 +531,6 @@ function RCVotingFrame:DoAllRandomRolls()
 end
 
 function RCVotingFrame:ToggleVoteLock()
-	-- b5:SetScript("OnClick", function(self) addon:SendCommand("group", "lockVotes", not addon.mldb.lockVotes) end )	
 	if addon.isMasterLooter then
 		if addon.mldb.votesLocked then
 			self.frame.lockVotesButton:SetText(L["Lock votes"])	
