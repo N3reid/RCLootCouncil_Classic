@@ -1,8 +1,14 @@
 # RCLootCouncil
 
-## [2.19.3-70-g0c62bb6](https://github.com/evil-morfar/RCLootCouncil2/tree/0c62bb61dcfd55124a12fb72397875623b5cd643) (2023-10-12)
-[Full Changelog](https://github.com/evil-morfar/RCLootCouncil2/compare/2.19.3...0c62bb61dcfd55124a12fb72397875623b5cd643) [Previous Releases](https://github.com/evil-morfar/RCLootCouncil2/releases)
+## [2.19.3-75-gfdae092](https://github.com/evil-morfar/RCLootCouncil2/tree/fdae092cc74b6a448c89ea5ccd1f10b467889b48) (2023-11-14)
+[Full Changelog](https://github.com/evil-morfar/RCLootCouncil2/compare/2.19.3...fdae092cc74b6a448c89ea5ccd1f10b467889b48) [Previous Releases](https://github.com/evil-morfar/RCLootCouncil2/releases)
 
+- Merge branch 'HEAD' into v2.x  
+- Added checks for missing candidate data  
+- Merge branch 'HEAD' into v2.x  
+- Observe mode udpdate.  
+    Observe + hide votes will no longer hide votes for non-council members.  
+- Prevent nil errors from breaking errorhandler  
 - Updated Ace3  
 - VF: Update current session only  
     Updating everything every time we receive data could lead to rows jumping around. Now we only update visuals if there's updates to the session we're looking at.  
